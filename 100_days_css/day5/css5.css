@@ -1,0 +1,125 @@
+.day5 {
+  background-color: #c97c18;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+.frame5 {
+  color: #5f5f5f;
+  background-color: #f1f1f1;
+}
+.card5 {
+  width: 90%;
+  height: 60%;
+  box-shadow: 3px 10px 15px 2px #08080871;
+}
+.card5 hr {
+  width: 95%;
+  margin: 0 auto;
+}
+.header5 {
+  position: relative;
+  height: 25%;
+  color: #f1f1f1;
+  background-color: #e49a12;
+}
+.weekly-report, .revenue,.date,.value, span[class*="dot5"]{ position: absolute;}
+.header5 > .weekly-report {
+  top: 15%;
+  left: 5%;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+.header5 > .date {
+  top: 45%;
+  left: 5%;
+}
+.header5 > .revenue {
+  right: 5%;
+  top: 15%;
+}
+.header5 > .value {
+  right: 5%;
+  top: 45%;
+  font-size: 15px;
+}
+.description5 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 20%;
+}
+.views5, .purchases5 {
+  position: relative;
+  padding: 0 3% 0 0;
+}
+.views5 {
+  padding: 0 13% 0 0;
+}
+.views5::before, .purchases5::before {
+  content: "";
+  width: 17px;
+  height: 5px;
+  background-color: #fa7373;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: -25px;
+}
+.purchases5::before { 
+  background-color: #7ba2ff;
+}
+.graph5 {
+  position: relative;
+  height: 40%;
+}
+.car5 {
+  position: relative;
+  height: 40%;
+  width: 100%;
+}
+.viewsgraph5,
+.purchasesgraph5 {
+  width: 100%;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.viewsgraph5 {
+  stroke: #fa7373;
+}
+span[class*="dot5"] {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+span[class*="dot5r"] {
+  background-color: #fa7373;
+}
+span[class*="dot5b"] {
+  background-color: #7ba2ff;
+}
+.dot5r1 {  top: 32px;  left: 22px;}
+.dot5r2 {  top: 9px;   left: 74px;}
+.dot5r3 {  top: 19px;  left: 130px;}
+.dot5r4 {  top: 8px;   left: 183px;}
+.dot5r5 {  top: 31px;  left: 234px;}
+.dot5r6 {  top: 31px;  left: 282px;}
+.dot5r7 {  top: 15px;  left: 334px;}
+.dot5b1 {  top: 55px;  left: 22px;}
+.dot5b2 {  top: 48px;  left: 74px;}
+.dot5b3 {  top: 72px;  left: 128px;}
+.dot5b4 {  top: 50px;  left: 183px;}
+.dot5b5 {  top: 53px;  left: 234px;}
+.dot5b6 {  top: 73px;  left: 282px;}
+.dot5b7 {  top: 57px;  left: 334px;}
+.purchasesgraph5 {
+  stroke: #7ba2ff;
+}
+.weekdays5 {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: 300;
+  height: 15%;
+}

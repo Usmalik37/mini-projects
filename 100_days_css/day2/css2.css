@@ -1,0 +1,103 @@
+.frame2{
+    background-color: #3faf82;
+}
+ .day2{
+    background-color: #243a3a;
+ }
+.container2{
+    width: 80px;
+    height: 80px;
+}
+div[class*='bar']{
+    width: 100%;
+    height: 7px;
+    margin: 13.2px auto;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 6px 8px 8px rgba(0,0,0,0.5);
+}
+.animate-line1{
+    animation: d-move-cross .7s forwards ease-in-out;
+}
+.animate-line2{
+    animation: c-move-hide .7s forwards ease-in-out;
+}
+.animate-line3{
+    animation: u-move-cross .7s forwards ease-in-out;
+}
+.no-animation{
+    -webkit-animation: none !important;
+    animation: none !important;
+}
+.rev-animation1{
+    animation: nd-move-cross .7s forwards ease-in-out;
+}
+.rev-animation2{
+    animation: nc-move-hide .7s forwards ease-in-out;
+}
+.rev-animation3{
+    animation: nu-move-cross .7s forwards ease-in-out;
+}
+@keyframes d-move-cross {
+    0%{
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+    }
+    50%{
+        transform: translate3d(0px, 20px, 0px) rotate(0deg);
+    }
+    100%{
+        transform: translate3d(0px, 20px, 0px) rotate(45deg);
+    }
+}
+@keyframes c-move-hide {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+@keyframes u-move-cross {
+    0%{
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+    }
+    50%{
+        transform: translate3d(0px, -21px, 0px) rotate(0deg);
+    }
+    100%{
+        transform: translate3d(0px, -21px, 0px) rotate(135deg);
+    }
+}
+@keyframes nd-move-cross {
+    0%{
+        transform: translate3d(0px, 20px, 0px) rotate(45deg);
+    }
+    50%{
+        transform: translate3d(0px, 20px, 0px) rotate(0deg);
+    }
+    100%{
+         transform: translate3d(0px, 0px, 0px) rotate(0deg);
+       
+    }
+}
+@keyframes nc-move-hide {
+    0%{     
+        transform: scale(0);
+        opacity: 0;}
+    100%{
+        transform: scale(1);
+        opacity: 1;}
+}
+@keyframes nu-move-cross {
+    0%{
+        transform: translate3d(0px, -21px, 0px) rotate(135deg);
+    }
+    50%{
+        transform: translate3d(0px, -21px, 0px) rotate(0deg);
+    }
+    100%{
+        transform: translate3d(0px, 0px, 0px) rotate(0deg);
+    }
+}

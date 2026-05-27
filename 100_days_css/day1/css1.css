@@ -1,0 +1,59 @@
+.frame1 {
+  background-image: linear-gradient(45deg, #222085, aqua);
+}
+.number {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.one-one,
+.one-two {
+  position: relative;
+  z-index: 3;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.one-one {
+  top: 6px;
+  left: 8px;
+  height: 40px;
+  transform: rotate(45deg);
+}
+.one-two {
+  height: 100px;
+}
+.zero-one,
+.zero-two {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+  border: 25px solid #fff;
+}
+.zero-one {
+  z-index: 2;
+  left: -10px;
+}
+.zero-two {
+  z-index: 1;
+  left: -20px;
+}
+.day1 span {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 0 0 15px;
+  line-height: 80px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+.day1 .days {
+  font-size: 95px;
+}
+.css-challenge {
+  font-size: 23px;
+  letter-spacing: 3px;
+  line-height: 0px;
+}

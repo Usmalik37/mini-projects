@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="clock">
+        <!-- hours ring: r=120, circumference = 2π×120 ≈ 754 -->
+        <svg viewBox="0 0 280 280">
+            <circle class="track" cx="140" cy="140" r="120"/>
+            <circle class="ring ring-h" id="ring-h" cx="140" cy="140" r="120"
+                stroke-dasharray="754" stroke-dashoffset="754"/>
+        </svg>
+
+        <!-- minutes ring: r=95, circumference ≈ 597 -->
+        <svg viewBox="0 0 280 280">
+            <circle class="track" cx="140" cy="140" r="95"/>
+            <circle class="ring ring-m" id="ring-m" cx="140" cy="140" r="95"
+                stroke-dasharray="597" stroke-dashoffset="597"/>
+        </svg>
+
+        <!-- seconds ring: r=70, circumference ≈ 440 -->
+        <svg viewBox="0 0 280 280">
+            <circle class="track" cx="140" cy="140" r="70"/>
+            <circle class="ring ring-s" id="ring-s" cx="140" cy="140" r="70"
+                stroke-dasharray="440" stroke-dashoffset="440"/>
+        </svg>
+
+        <div class="center">
+            <div class="time-display" id="time-display">00:00:00</div>
+            <div class="date-display" id="date-display"></div>
+        </div>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item"><div class="dot dot-h"></div> Hours</div>
+        <div class="legend-item"><div class="dot dot-m"></div> Minutes</div>
+        <div class="legend-item"><div class="dot dot-s"></div> Seconds</div>
+    </div>
+
+    <button class="toggle" id="toggle">DARK MODE</button>
+
+    <script src="main.js"></script>
+</body>
+</html>

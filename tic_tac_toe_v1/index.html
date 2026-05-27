@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>tic tac toe</title>
+
+    <!-- HTML -->
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="menu">
+      <div class="main-menu">
+        <button onclick="play()">PLAY</button>
+      </div>
+    </div>
+
+    <div class="message-box"></div>
+
+    <div class="score-board blur">
+      <div class="player-score">PLAYER &nbsp;: 0</div>
+      <div class="algo-score">ALGO &nbsp; &nbsp; &nbsp;: 0</div>
+      <div class="round">ROUND &nbsp; : 1</div>
+    </div>
+    <div class="container blur">
+      <div class="tl" onclick="checkOut(tl)"></div>
+      <div class="tc" onclick="checkOut(tc)"></div>
+      <div class="tr" onclick="checkOut(tr)"></div>
+      <div class="cl" onclick="checkOut(cl)"></div>
+      <div class="cc" onclick="checkOut(cc)"></div>
+      <div class="cr" onclick="checkOut(cr)"></div>
+      <div class="bl" onclick="checkOut(bl)"></div>
+      <div class="bc" onclick="checkOut(bc)"></div>
+      <div class="br" onclick="checkOut(br)"></div>
+      <button class="return-btn">Pause</button>
+      <button class="end-btn">End</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

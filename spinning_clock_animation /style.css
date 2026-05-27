@@ -1,0 +1,160 @@
+:root {
+  --bg: #f5f2ee;
+  --surface: #eae5df;
+  --text: #2c2c2c;
+  --muted: #8a8078;
+  --ring-track: #d6cfc7;
+  --s-color: #a07850;
+  --m-color: #7a9e87;
+  --h-color: #7888a8;
+}
+
+.dark-mode {
+  --bg: #1a1a1a;
+  --surface: #242424;
+  --text: #e8e2da;
+  --muted: #7a7068;
+  --ring-track: #2e2e2e;
+  --s-color: #c49a6c;
+  --m-color: #8fba9b;
+  --h-color: #8fa0c4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* clock */
+.clock {
+  position: relative;
+  width: 280px;
+  height: 280px;
+}
+
+.clock svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  /* start from top */
+}
+
+/* track (background circle) */
+.track {
+  fill: none;
+  stroke: var(--ring-track);
+  stroke-width: 10;
+}
+
+/* progress ring */
+.ring {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.8s ease;
+}
+
+.ring-s {
+  stroke: var(--s-color);
+}
+
+.ring-m {
+  stroke: var(--m-color);
+}
+
+.ring-h {
+  stroke: var(--h-color);
+}
+
+/* center display */
+.center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.time-display {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.date-display {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* legend */
+.legend {
+  display: flex;
+  gap: 24px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot-s {
+  background: var(--s-color);
+}
+
+.dot-m {
+  background: var(--m-color);
+}
+
+.dot-h {
+  background: var(--h-color);
+}
+
+/* toggle button */
+.toggle {
+  background: var(--surface);
+  border: none;
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--muted);
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle:hover {
+  color: var(--text);
+}

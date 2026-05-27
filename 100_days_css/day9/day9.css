@@ -1,0 +1,271 @@
+:root{
+    --bg-color: #1a2238;
+    --drop-color: #7fc1f9;
+    --moon-color: #f6edbb;
+    --crater-color: #e6d78c;
+    --dune-1: #26314f;
+    --dune-2: #303c5d;
+
+}
+
+.day-9{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-9{
+    width: 90%;
+    aspect-ratio: 100/99;
+    background-color: var(--bg-color);
+}
+    .card-9-1{
+        position: relative;
+        width: 100%;
+        height: 70%;
+    }
+        .moon-9{
+            position: absolute;
+            z-index: -1;
+            top: 25px;
+            left: 25px;
+            width: 80px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background-color: var(--moon-color);
+            box-shadow: 0px 0px 6px 6px #ffffff75;
+        }
+            .moon-9 > span{
+                position: absolute;
+                width: 20px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                background-color: var(--crater-color);
+            }
+            .moon-9 > span:nth-child(even){
+                top: 30px;
+            }
+            .moon-9 > span:nth-child(odd){
+                left: 30px;
+            }
+            .moon-9 > span:nth-child(1){
+                transform: translate(24px,15px);
+                width: 18px;
+            }
+            .moon-9 > span:nth-child(2){
+                transform: translate(4px,15px);
+                width: 19px;
+            }
+            .moon-9 > span:nth-child(3){
+                transform: translate(14px,40px);
+                width: 15px;
+            }
+            .moon-9 > span:nth-child(4){
+                transform: translate(24px,38px);
+                width: 10px;
+            }
+
+        .rain-9{
+            overflow: hidden;
+            position: relative;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+            .rain-9-1 > span{
+                position: absolute;
+                z-index: 2;
+                display: block;
+                width: 15px;
+                aspect-ratio: 3/3;
+                background-color: var(--drop-color);
+                border-radius: 30px 5px 25px 25px;
+                animation: big-drop .5s ease-in infinite;
+            }
+                .rain-9-1> span:nth-child(1){
+                    top: -10%;
+                    right: 10%;
+                }
+                .rain-9-1> span:nth-child(2){
+                    top: 0%;
+                    right: 20%;
+                }
+                .rain-9-1> span:nth-child(3){
+                    top: 5%;
+                    right: 40%;
+                }
+                .rain-9-1> span:nth-child(4){
+                    top: -10%;
+                    right: 70%;
+                }
+                .rain-9-1> span:nth-child(5){
+                    top: 0%;
+                    right: 80%;
+                }
+                
+            .rain-9-2 > span{
+                position: absolute;
+                z-index: 1;
+                display: block;
+                width: 13px;
+                aspect-ratio: 3/3;
+                background-color: var(--drop-color);
+                border-radius: 30px 5px 25px 25px;
+                transform: translateX(0px);
+                animation: mid-drop .7s ease-out infinite;
+            }
+                .rain-9-2> span:nth-child(1){
+                    top: 0%;
+                    right: 100%;
+                }
+                .rain-9-2> span:nth-child(2){
+                    top: 25%;
+                    right: 25%;
+                }
+                .rain-9-2> span:nth-child(3){
+                    top: 15%;
+                    right: 50%;
+                }
+                .rain-9-2> span:nth-child(4){
+                    top: 80%;
+                    right: 80%;
+                }
+                .rain-9-2> span:nth-child(5){
+                    top: 40%;
+                    right: 90%;
+                }
+                
+            .rain-9-3 > span{
+                position: absolute;
+                z-index: 1;
+                display: block;
+                width: 8px;
+                aspect-ratio: 3/3;
+                background-color: var(--drop-color);
+                border-radius: 30px 5px 25px 25px;
+                transform: translateX(10px);
+                animation: sml-drop .7s ease-in-out infinite;
+            }
+                .rain-9-3> span:nth-child(1){
+                    top: 15%;
+                    right: 100%;
+                }
+                .rain-9-3> span:nth-child(2){
+                    top: 5%;
+                    right: 20%;
+                }
+                .rain-9-3> span:nth-child(3){
+                    top: 0%;
+                    right: 35%;
+                }
+                .rain-9-3> span:nth-child(4){
+                    top: 10%;
+                    right: 75%;
+                }
+                .rain-9-3> span:nth-child(5){
+                    top: 5%;
+                    right: 80%;
+                }
+                
+
+        .dune-9{
+            position: absolute;
+            top: 0px;
+            z-index: -2;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+        }
+            .dune-9 > div{
+                position: absolute;
+                display: flex;
+                align-items: end;
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+            }
+                .dune-9 > .dune-9-1 > div{
+                    flex: 1;
+                    height: 53px;
+                    border-radius: 50% 50% 0 0;
+                    background-color: var(--dune-1);
+                }
+                .dune-9 > .dune-9-2 > div{
+                    flex: 1;
+                    height: 42px;
+                    border-radius: 50% 50% 0 0;
+                    background-color: var(--dune-2);
+                }
+
+    .card-9-2{
+        display: inline-flex;
+        width: 100%;
+        height: 30%;
+        background-color: #f1f1f1;
+        justify-content: space-evenly;
+    }
+        .degrees-9{
+            font-size: 46px;
+            width: 20%;
+            height: 100%;
+        }
+        .wind-9{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .wind-9 span{
+            display: block;
+            margin: 5px;
+            padding: 10px;
+            color: #444;
+            height: 30%;
+            font-size: 15px;
+        }
+            .wind-9 > span{
+                display: block;
+                margin: 7px;
+                padding: 8px;
+                color: #444;
+                height: 30%;
+                font-size: 15px;
+            }   
+        .time-9{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+            .time-9 > span{
+                display: block;
+                margin: 5px;
+                padding: 10px;
+                color: #444;
+                height: 30%;
+                font-size: 15px;
+
+            }
+
+    @keyframes big-drop {
+        0%{
+            transform: translate(20px,1px);
+        }
+        100%{
+            transform: translate(-20px,260px);
+            border-radius: 100% 100% 5px 5px;
+            background-color: rgb(19, 39, 94);
+        }
+    }
+    @keyframes mid-drop {
+        0%{
+            transform: translate(40px,20px);
+        }
+        100%{
+            transform: translate(-40px,260px);
+        }
+    }
+    @keyframes sml-drop {
+        0%{
+            transform: translate(40px,20px);
+        }
+        100%{
+            transform: translate(-60px,260px);
+        }
+    }

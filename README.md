@@ -16,7 +16,7 @@ A digital clock with three concentric SVG progress rings — one each for hours,
 
 
 ### ❌ Tic Tac Toe v1
-A working tic tac toe game with a basic blocking AI. Original version kept as-is.
+A working tic tac toe game with a basic blocking AI (if's and else's). 
 * **Stack:** HTML · CSS · JavaScript
 
 
